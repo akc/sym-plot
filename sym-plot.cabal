@@ -1,5 +1,5 @@
 name:                sym-plot
-version:             0.2.0
+version:             0.3.0
 synopsis:            Plot permutations; an addition to the sym package
 description:
   This packade adds plots to the sym package. It has been factored out
@@ -19,5 +19,8 @@ source-repository head
   location:            git://github.com/akc/sym-plot.git
 
 library
-  build-depends:       base >= 3 && <= 4.7, sym >= 0.9, diagrams-lib, diagrams-cairo
-  Exposed-modules:     Math.Sym.Plot
+  build-depends:       base >=4.7 && <=5,
+                       sym >=0.12,
+                       diagrams-lib >=1.4,
+                       diagrams-cairo >=1.4
+  Exposed-modules:     Sym.Plot
